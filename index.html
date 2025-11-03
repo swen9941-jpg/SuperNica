@@ -1,12 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Legit Store</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuperNica Store</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #222;
+    }
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+    }
+    header h1 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+    .hero {
+      background: linear-gradient(to right, #ffe082, #ffcc80);
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .hero h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 15px 0 5px;
+    }
+    .price {
+      color: #e65100;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      background: #1a1a1a;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #ff9800;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #ffcc80;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>My Legit Store</h1>
+    <h1>SuperNica</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
@@ -15,23 +112,32 @@
       <a href="policies.html">Policies</a>
     </nav>
   </header>
+
+  <section class="hero">
+    <h2>Welcome to SuperNica 🇳🇮</h2>
+    <p>Your local online store — made in Nicaragua, for Nicaraguans.</p>
+  </section>
+
   <section class="products">
     <div class="product">
-      <img src="https://via.placeholder.com/150" alt="Product 1">
-      <h2>Product ChatGPT Image Aug 10, 2025, 07_45_18 AM.png
-</h2>
-      <p>$19.99</p>
-      <button>Add to Cart</button>
+      <img src="ChatGPT%20Image%20Aug%2010%2C%202025%2C%2007_14_38%20AM.png" alt="Product 1">
+      <h3>Product 1</h3>
+      <p class="price">$19.99</p>
+      <a class="btn" href="https://wa.me/50584231737?text=Hola!%20Estoy%20interesado%20en%20el%20Producto%201%20de%20SuperNica.">Order on WhatsApp</a>
     </div>
+
     <div class="product">
-      <img src="https://via.placeholder.com/150" alt="Product 2">
-      <h2>Product ChatGPT Image Aug 10, 2025, 07_14_38 AM.png 2</h2>
-      <p>$29.99</p>
-      <button>Add to Cart</button>
+      <img src="ChatGPT%20Image%20Aug%2010%2C%202025%2C%2007_45_18%20AM.png" alt="Product 2">
+      <h3>Product 2</h3>
+      <p class="price">$29.99</p>
+      <a class="btn" href="https://wa.me/50584231737?text=Hola!%20Quiero%20más%20información%20sobre%20el%20Producto%202.">Order on WhatsApp</a>
     </div>
   </section>
+
   <footer>
-    <p>&copy; 2025 My Legit Store | <a href="policies.html">Privacy Policy</a></p>
+    © 2025 SuperNica | Built in Nicaragua | <a href="policies.html">Privacy Policy</a>
   </footer>
+
 </body>
 </html>
+
